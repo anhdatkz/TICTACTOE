@@ -1,0 +1,55 @@
+.board{
+    margin: 50px 100px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cell{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+.cell.is-x{
+    color: red;
+}
+
+.cell.is-o{
+    color: aqua;
+}
+
+.show-winner{
+    position: fixed;
+    top: 50px;
+    right: 200px;
+    padding: 50px;
+    border: 1px solid rgb(255, 136, 0);
+    border-radius: 20px;    
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.reset{
+    padding: 5px 20px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
