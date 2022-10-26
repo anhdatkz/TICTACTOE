@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .board{
     margin: 50px 100px;
     width: 500px;
@@ -10,7 +14,6 @@
 
 .cell{
     border: 1px solid #ccc;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,12 +21,19 @@
     font-size: 64px;
 }
 
+.cell:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 50px;
+}
+
 .cell.is-x{
     color: red;
+    text-shadow: red 0px 5px 20px;
 }
 
 .cell.is-o{
     color: aqua;
+    text-shadow: aqua 0px 5px 20px;
 }
 
 .show-winner{
